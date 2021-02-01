@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<block>
+  <name>fsk</name>
+  <key>chirp_fsk</key>
+  <category>[chirp]</category>
+  <import>import chirp</import>
+  <make>chirp.fsk($crc)</make>
+  <param>
+    <name>CRC</name>
+    <key>crc</key>
+    <value>True</value>
+    <type>bool</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<block>
+  <name>Chirp Demodulation</name>
+  <key>chirp_demod</key>
+  <category>[chirp]</category>
+  <import>import chirp</import>
+  <make>chirp.demod($BW, $fs, $ts, $threshold)</make>
+  <param>
+    <name>Bandwidth</name>
+    <key>BW</key>
+    <value>BW</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Sample Rate</name>
+    <key>fs</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param> 
+  <param>
+    <name>Sweeping Time</name>
+    <key>ts</key>
+    <value>ts</value>
+    <type>float</type>
+  </param> 
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <value>threshold</value>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>

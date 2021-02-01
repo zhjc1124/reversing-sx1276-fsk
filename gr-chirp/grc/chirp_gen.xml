@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<block>
+  <name>Chirp Generator</name>
+  <key>chirp_gen</key>
+  <category>[chirp]</category>
+  <import>import chirp</import>
+  <make>chirp.gen($BW, $fs, $ts, $bias)</make>
+  <param>
+    <name>Bandwidth</name>
+    <key>BW</key>
+    <value>BW</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Sample Rate</name>
+    <key>fs</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param> 
+  <param>
+    <name>Sweeping Time</name>
+    <key>ts</key>
+    <value>ts</value>
+    <type>float</type>
+  </param> 
+  <param>
+    <name>Bias</name>
+    <key>bias</key>
+    <value>0</value>
+    <type>int</type>
+  </param> 
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>
